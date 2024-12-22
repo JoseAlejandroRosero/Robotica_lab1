@@ -1,4 +1,6 @@
 MODULE Module1
+!Definición de los puntos por donde pasa la trayectoria en forma de robtargets.
+!    
     CONST robtarget Target_10:=[[149.241,70.858,24],[0.130526196,0,0.991444861,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_20:=[[149.241,70.858,0],[0.130526196,0,0.991444861,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_30:=[[135.099,85,0],[0.130526196,0,0.991444861,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
@@ -119,9 +121,22 @@ MODULE Module1
     CONST robtarget Target_1190:=[[32.478,52.972,0],[0.130526152,0,0.991444867,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_1200:=[[32.478,52.972,24],[0.130526152,0,0.991444867,0],[-1,1,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
     CONST robtarget Target_330:=[[118.646,87.868,0],[0.130526201,0,0.99144486,-0.000000003],[0,2,-3,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+!Definición del objeto tooldata con los dato de la herramienta a usar en el efector final del robot.
+!
     PERS tooldata MyNewTool:=[TRUE,[[25.289,0,191.739],[0.923879533,0,0.382683432,0]],[0.5,[-37.543,-11.677,118.601],[1,0,0,0],0,0,0]];
+!Definición del objeto wobjdata con los datos del WorkObject donde el robot va a trazar la trayectoria.
+!Entonces si se necesita girar o modificar la trayectoria simplemente se modifica los datos del workobject.
+!
     TASK PERS wobjdata Workobject_1:=[FALSE,TRUE,"",[[615,-85,200],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+!Proceso que contiene las instrucciones de movimiento del robot
+!
     PROC Path_10()
+!La instrucción MoveJ se utiliza ya que esto permite al robot trabajar en el espacio articular.
+!Esto permite que incluso si la trayectoria se rota, el robot so sufrirá de errores de singularidad a causa de gimbal locking.
+!
+!Se utiliza la Instrucción MoveC para definir las trayectorias curvas de algunas de las letras del logo.
+!Se tuvo mucho cuidado de evitar las curvas que generasen errores como círculo indefinidos o puntos inalcanzables.
+!
         MoveJ Target_10,v100,fine,MyNewTool\WObj:=Workobject_1;
         MoveJ Target_20,v100,z10,MyNewTool\WObj:=Workobject_1;
         MoveJ Target_30,v100,z10,MyNewTool\WObj:=Workobject_1;
