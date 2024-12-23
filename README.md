@@ -421,21 +421,65 @@ Este enfoque asegura que el robot **trabaje de manera eficiente** en su tarea pr
 
 ---
 
-## **7. Implementación del Sensor**
-### **Descripción del Sensor:**
-Se instaló un sensor en la herramienta para detectar la posición del *workobject*.
-
-### **Calibración y Posicionamiento:**
-Se calibró el sensor para garantizar una detección precisa.
-
----
-
 ## **8. Diagrama de Flujo**
 ### **Descripción del Flujo de Operaciones:**
 A continuación, se presenta un diagrama de flujo que describe las acciones del robot.
 
-**Diagrama de Flujo:**
-![Agregar Imagen](#)
+```plaintext
+                 +-------------------------+
+                 |      INICIO             |
+                 +-----------+-------------+
+                             |
+                             v
+                 +-------------------------+
+                 | ¿Entrada Digital 1 ON?  |
+                 +-----------+-------------+
+                      No |        | Sí
+                         |        v
+                         | +----------------+
+                         | | Activar Salida |
+                         | | Realizar       |
+                         | | Trayectoria    |
+                         | +----------------+
+                         |        |
+                         |        v
+                         | +----------------+
+                         | | Desactivar     |
+                         | | Salida         |
+                         | +----------------+
+                         |        |
+                         v        |
+                 +-------------------------+
+                 | ¿Entrada Digital 2 ON?  |
+                 +-----------+-------------+
+                      No |        | Sí
+                         |        v
+                         | +----------------+
+                         | | Ir a Posición  |
+                         | | de Mantenimiento|
+                         | | Activar Salida |
+                         | +----------------+
+                         |        |
+                         |        v
+                         | +----------------+
+                         | | ¿Entrada Digital|
+                         | | 1 ON?          |
+                         | +----------------+
+                         |        |
+                         |   Sí   |
+                         |        v
+                         | +----------------+
+                         | | Desactivar     |
+                         | | Salida         |
+                         | +----------------+
+                         |        |
+                         v        |
+                 +-------------------------+
+                 |       ESPERAR           |
+                 | Nueva señal de entrada  |
+                 +-------------------------+
+
+```
 
 ---
 
