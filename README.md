@@ -329,17 +329,95 @@ Utilizando el editor de ruta de RAPID se terminó de configurar las instruccione
 
 ## **5. Implementación en el Robot Real**
 Una vez se terminó de configurar el módulo de RAPID y de asegurarse que las simulaciones funcionaran, se procedió a probar la ruta en los robots reales definiendo el *workobject* en la esquina inferior derecha del pastel/papel.
-
 Tomando las precauciones debidas, zona de trabajo despejada y un asistente en el botón de parada de emergencia, se logró realizar satisfactoriamente la ruta.
+
 
 ---
 
 ## **6. Entradas y Salidas Digitales**
 ### **Configuración de Señales Digitales:**
-- **Entrada 1:** Inicia la rutina de decorado.
-- **Entrada 2:** Posiciona el robot en modo mantenimiento.
-- **Salida 1:** Activa la luz de indicación.
-- **Salida 2:** Apaga la luz de indicación.
+
+# Explicación Conceptual del Programa RAPID
+
+El programa controla un **robot industrial** con dos modos principales de funcionamiento: **Operación normal** y **Modo de mantenimiento**.
+
+---
+
+##  *1. Operación Normal**  
+- El robot **espera una señal de inicio** (entrada digital) para comenzar su tarea principal.  
+- Al recibir esta señal:  
+   - El robot **realiza una trayectoria predefinida**, moviéndose entre puntos específicos.  
+   - Se **activa una salida digital** (por ejemplo, una luz) para indicar que está en operación.  
+- Una vez finalizada la trayectoria:  
+   - La **salida digital se apaga**.  
+   - El robot **regresa a su estado de espera**, listo para recibir una nueva señal de inicio.
+
+---
+
+##  *2. Modo de Mantenimiento**  
+- Si el robot recibe una **señal específica para mantenimiento** (segunda entrada digital):  
+   - **Interrumpe cualquier acción en curso.**  
+   - Se **desplaza a una posición segura predefinida** para mantenimiento.  
+   - Se **activa una segunda salida digital** para indicar que está en modo mantenimiento.  
+- El robot **permanece en esta posición** hasta recibir una nueva señal de inicio:  
+   - Al recibir la señal, la **salida digital de mantenimiento se apaga**.  
+   - El robot **vuelve al estado de espera**, listo para operar nuevamente.
+
+---
+
+##  *Resumen del Comportamiento**  
+- **Operación normal:** El robot realiza su tarea y enciende una señal de operación.  
+- **Modo mantenimiento:** El robot se mueve a una posición segura y activa una señal de mantenimiento.  
+- El sistema es **cíclico** y siempre espera nuevas órdenes para cambiar su estado.
+```
+MODULE MainModule
+
+    ! Declaración de señales
+    VAR signaldi diStart := di1;           ! Entrada digital para iniciar trayectoria
+    VAR signaldo doTrajActive := do1;      ! Salida digital activa durante la trayectoria
+    VAR signaldi diMaintenance := di2;     ! Entrada digital para mantenimiento
+    VAR signaldo doMaintenanceMode := do2; ! Salida digital activa en modo mantenimiento
+
+    ! Puntos de trayectoria
+    CONST robtarget pStart:=[[500,0,500],[1,0,0,0],[-1,0,0,0],[0,0,0,0]];
+    CONST robtarget pEnd:=[[1000,0,500],[1,0,0,0],[-1,0,0,0],[0,0,0,0]];
+    CONST robtarget pMaintenance:=[[0,500,500],[1,0,0,0],[-1,0,0,0],[0,0,0,0]];
+
+    ! Rutina principal
+    PROC main()
+        WHILE TRUE DO
+            IF diMaintenance = 1 THEN
+                MaintenanceMode();
+            ELSEIF diStart = 1 THEN
+                Trajectory();
+            ENDIF
+            WaitTime 0.1; ! Pequeño retraso para evitar sobrecarga del sistema
+        ENDWHILE
+    ENDPROC
+
+    ! Rutina para la trayectoria
+    PROC Trajectory()
+        Set doTrajActive;    ! Encender salida digital para indicar trayectoria activa
+        MoveJ pStart, v100, fine, tool0;
+        MoveL pEnd, v200, fine, tool0;
+        MoveJ pStart, v100, fine, tool0;
+        Reset doTrajActive;  ! Apagar salida digital al finalizar
+        WaitUntil diStart = 0; ! Esperar a que la entrada se apague antes de continuar
+    ENDPROC
+
+    ! Rutina para mantenimiento
+    PROC MaintenanceMode()
+        Set doMaintenanceMode; ! Encender salida digital para modo mantenimiento
+        MoveJ pMaintenance, v100, fine, tool0;
+        WaitUntil diMaintenance = 0; ! Esperar a que la entrada se apague
+        Reset doMaintenanceMode; ! Apagar salida digital de mantenimiento
+    ENDPROC
+
+ENDMODULE
+```
+
+Este enfoque asegura que el robot **trabaje de manera eficiente** en su tarea principal y pueda **realizar mantenimiento de forma segura** cuando sea necesario.
+
 
 ---
 
