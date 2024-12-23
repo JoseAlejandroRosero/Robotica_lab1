@@ -49,10 +49,7 @@ El contexto de este laboratorio surge de la necesidad de automatizar procesos in
 ### **Descripción de la Herramienta Diseñada:**
 Se diseñó una herramienta que permite fijar un marcador a la brida del robot ABB IRB 140. Esta herramienta asegura una sujeción estable y permite realizar trayectorias precisas sobre una superficie.
 
-![image](https://github.com/user-attachments/assets/55d17d5b-4483-4444-874a-609dbb06779d)
-
-[Ver Video: Título descriptivo]([URL_del_video](https://github.com/JoseAlejandroRosero/Robotica_lab1/blob/main/RobotStudio%2012-21.mp4))
-
+![image](https://github.com/user-attachments/assets/e7dd4e3c-c3dd-4c32-bfe5-42124ad5f5a7)
 
 
 ### **Parámetros de Diseño:**
