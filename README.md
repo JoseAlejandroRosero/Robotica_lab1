@@ -514,7 +514,7 @@ https://github.com/user-attachments/assets/7687df32-6a72-4f66-b5e6-19027e26dfc2
 Se proporciona el enlace al repositorio donde se encuentran los archivos y el código completo.
 
 **Enlace al repositorio:**
-[Repositorio GitHub](#https://github.com/JoseAlejandroRosero/Robotica_lab1/tree/main)
+[Repositorio GitHub](https://github.com/JoseAlejandroRosero/Robotica_lab1/tree/main)
 
 ---
 
