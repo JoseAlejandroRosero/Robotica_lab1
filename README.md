@@ -68,22 +68,7 @@ El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el 
 
 ---
 
-## **4. Calibración de la Herramienta**
-### **Calibración en RobotStudio:**
-Se utilizó la herramienta de calibración integrada en RobotStudio para definir el TCP de la herramienta.
-
-### **Calibración en el Robot Real:**
-El proceso implicó la ejecución de movimientos manuales para alinear la punta de la herramienta con puntos de referencia definidos.
-
-### **Comparación de Resultados:**
-Se compararon los valores obtenidos en ambas calibraciones para verificar la precisión de los datos.
-
-**Campo de respuesta:**
-*(Describe los resultados y agrega imágenes o capturas de pantalla)*
-
----
-
-## **5. Desarrollo de las Trayectorias**
+## **4. Desarrollo de las Trayectorias**
 ### **Descripción de las Trayectorias Diseñadas:**
 Se diseñaron trayectorias para escribir las cinco primeras letras de los nombres de los integrantes del grupo y realizar una decoración adicional.
 
@@ -103,7 +88,7 @@ Se configuró una superficie inclinada a 30° para replicar la tarea en diferent
 
 ---
 
-## **6. Programación en RAPID**
+## **5. Programación en RAPID**
 ### **Código RAPID Utilizado:**
 El siguiente ejemplo muestra una estructura básica para las trayectorias:
 
@@ -123,7 +108,7 @@ ENDMODULE
 
 ---
 
-## **7. Entradas y Salidas Digitales**
+## **6. Entradas y Salidas Digitales**
 ### **Configuración de Señales Digitales:**
 - **Entrada 1:** Inicia la rutina de decorado.
 - **Entrada 2:** Posiciona el robot en modo mantenimiento.
@@ -135,7 +120,7 @@ ENDMODULE
 
 ---
 
-## **8. Implementación del Sensor**
+## **7. Implementación del Sensor**
 ### **Descripción del Sensor:**
 Se instaló un sensor en la herramienta para detectar la posición del *workobject*.
 
@@ -147,7 +132,7 @@ Se calibró el sensor para garantizar una detección precisa.
 
 ---
 
-## **9. Diagrama de Flujo**
+## **8. Diagrama de Flujo**
 ### **Descripción del Flujo de Operaciones:**
 A continuación, se presenta un diagrama de flujo que describe las acciones del robot.
 
@@ -156,7 +141,7 @@ A continuación, se presenta un diagrama de flujo que describe las acciones del 
 
 ---
 
-## **10. Plano de Ubicación de Elementos**
+## **9. Plano de Ubicación de Elementos**
 Se presenta un plano que muestra la ubicación de los elementos clave: herramienta, sensor y superficie de trabajo.
 
 **Plano de Ubicación:**
@@ -164,7 +149,7 @@ Se presenta un plano que muestra la ubicación de los elementos clave: herramien
 
 ---
 
-## **11. Resultados Obtenidos**
+## **10. Resultados Obtenidos**
 - **Simulación en RobotStudio:** *(Describe la simulación)*
 - **Implementación en Robot Real:** *(Describe los resultados físicos)*
 
@@ -173,7 +158,7 @@ Se presenta un plano que muestra la ubicación de los elementos clave: herramien
 
 ---
 
-## **12. Conclusiones**
+## **11. Conclusiones**
 Se presentan las conclusiones derivadas del desarrollo del laboratorio, los aprendizajes clave y posibles mejoras para futuras prácticas.
 
 **Campo de respuesta:**
@@ -181,7 +166,7 @@ Se presentan las conclusiones derivadas del desarrollo del laboratorio, los apre
 
 ---
 
-## **13. Repositorio en GitHub**
+## **12. Repositorio en GitHub**
 Se proporciona el enlace al repositorio donde se encuentran los archivos y el código completo.
 
 **Enlace al repositorio:**
