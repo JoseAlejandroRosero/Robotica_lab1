@@ -51,23 +51,20 @@ Se diseñó una herramienta que permite fijar un marcador a la brida del robot A
 
 ![image](https://github.com/user-attachments/assets/b201da77-73fb-48eb-9e48-b03e7168cb93)
 
+### **Modelo CAD de la Herramienta:**
+El diseño se modeló en un software CAD y se exportó en formato `.STL` para su importación en RobotStudio.
 
 ### **Parámetros de Diseño:**
-- Material: *(Especificar material utilizado)*
-- Tipo de sujeción: *(Especificar tipo de fijación)*
-- Adaptación al flanche: *(Describir mecanismo de montaje)*
+- Material: PLC
+- Tipo de sujeción: Por friccion al marcador
+- Adaptación al flanche: 4 tornillos
+
+![image](https://github.com/user-attachments/assets/7739ee76-a5b7-42cf-ac46-aae5367c6d8d)
+
 
 ### **Calibración de la Herramienta:**
-El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el robot físico, asegurando que las coordenadas del TCP (Tool Center Point) estuvieran correctamente definidas.
+El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el robot físico, asegurando que las coordenadas del TCP (Tool Center Point) estuvieran correctamente definidas llevando el TCP al mismo punto desde 3 orientaciones distintas y definiendo una direccion de avance.
 
-### **Modelo CAD de la Herramienta:**
-El diseño se modeló en un software CAD y se exportó en formato `.STL` o `.SAT` para su importación en RobotStudio.
-
-**Campo de respuesta:**
-*(Inserta aquí el modelo CAD, imágenes o diagramas)*
-
-**Imagen del diseño CAD:**
-![Agregar Imagen](#)
 
 ---
 
