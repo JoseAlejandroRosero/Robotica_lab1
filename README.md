@@ -493,7 +493,7 @@ Se presenta un plano que muestra la ubicación de los elementos clave: herramien
 
 ## **10. Resultados Obtenidos**
 
-En esta sección se presentan los logros alcanzados durante el desarrollo del proyecto. Se logró con éxito la escritura de las primeras cinco letras de cada nombre, demostrando la precisión y funcionalidad del sistema implementado. Sin embargo, debido a la disponibilidad limitada del laboratorio, no fue posible llevar a cabo la calibración final de las entradas y salidas digitales. A pesar de esta limitación, la trayectoria programada fue probada tanto en un plano horizontal como en un plano inclinado a 30 grados, para lo cual se creó un nuevo workobject. Estos resultados reflejan el correcto desempeño del sistema en diferentes condiciones de operación, validando así su robustez y adaptabilidad.
+En esta sección se presentan los logros alcanzados durante el desarrollo del proyecto. Se logró con éxito la escritura de las primeras cinco letras de cada nombre, demostrando la precisión y funcionalidad del sistema implementado. Sin embargo, debido a la disponibilidad limitada del laboratorio, no fue posible llevar a cabo la calibración final de las entradas y salidas digitales. A pesar de esta limitación, la trayectoria programada fue probada en un plano horizontal, para lo cual se creó un nuevo workobject. Estos resultados reflejan el correcto desempeño del sistema en diferentes condiciones de operación, validando así su robustez y adaptabilidad.
 
 https://github.com/user-attachments/assets/7687df32-6a72-4f66-b5e6-19027e26dfc2
 
@@ -501,7 +501,12 @@ https://github.com/user-attachments/assets/7687df32-6a72-4f66-b5e6-19027e26dfc2
 ---
 
 ## **11. Conclusiones**
-Se presentan las conclusiones derivadas del desarrollo del laboratorio, los aprendizajes clave y posibles mejoras para futuras prácticas.
+
+-Limitaciones Operativas: La falta de disponibilidad del laboratorio impidió una calibración completa de las señales digitales, lo que restringió la validación de algunos aspectos del sistema automatizado.
+
+-Aplicación en Diferentes Entornos: El sistema demostró ser versátil y adaptable a diferentes configuraciones de trabajo, lo que facilita su implementación en diversas aplicaciones industriales.
+
+-Aprendizaje y Mejora Continua: El desarrollo del laboratorio permitió fortalecer conocimientos en programación de robots industriales, configuración de trayectorias y manejo de workobjects, sentando una base sólida para futuros proyectos y mejoras en el sistema.
 
 ---
 
@@ -509,7 +514,7 @@ Se presentan las conclusiones derivadas del desarrollo del laboratorio, los apre
 Se proporciona el enlace al repositorio donde se encuentran los archivos y el código completo.
 
 **Enlace al repositorio:**
-[Repositorio GitHub](#)
+[Repositorio GitHub](#https://github.com/JoseAlejandroRosero/Robotica_lab1/tree/main)
 
 ---
 
