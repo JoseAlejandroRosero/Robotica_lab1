@@ -487,7 +487,9 @@ A continuación, se presenta un diagrama de flujo que describe las acciones del 
 Se presenta un plano que muestra la ubicación de los elementos clave: herramienta, sensor y superficie de trabajo.
 
 **Plano de Ubicación:**
-![Agregar Imagen](#)
+
+![image](https://github.com/user-attachments/assets/4f9ccc72-07bf-4752-9a14-9477390e2d8e)
+
 
 ---
 
