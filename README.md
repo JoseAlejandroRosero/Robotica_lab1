@@ -68,6 +68,10 @@ Se configuró una superficie inclinada a 30° para replicar la tarea en diferent
 
 Una vez hecho esto, se sincronizó la ruta con los controladores virtuales del software para generar un código en RAPID. Se editó el código RAPID para evitar colisiones, errores de singularidad y modificar puntos no alcanzables.
 
+
+https://github.com/user-attachments/assets/afbffb6b-02c6-4d95-a072-a3922f04cfd2
+
+
 ---
 
 ## **4. Programación en RAPID**
