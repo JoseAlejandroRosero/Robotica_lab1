@@ -65,6 +65,8 @@ El diseño se modeló en un software CAD y se exportó en formato `.STL` para su
 ### **Calibración de la Herramienta:**
 El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el robot físico, asegurando que las coordenadas del TCP (Tool Center Point) estuvieran correctamente definidas llevando el TCP al mismo punto desde 3 orientaciones distintas y definiendo una direccion de avance.
 
+![image](https://github.com/user-attachments/assets/3430d06b-c516-4ad4-8f5e-6330852468ae)
+
 
 ---
 
