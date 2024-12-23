@@ -50,7 +50,13 @@ Mediante Autocad se diseñaron las geometrias de cada una de las letras y la tor
 
 ![image](https://github.com/user-attachments/assets/b11e2636-41ca-49a9-b437-922122466578)
 
-Utilizando las herramientas de creación de rutas, se eligieron los puntos (*robtarget*) de la trayectoria respecto al *workobject* creado y luego se procedió a trazar la ruta con los puntos seleccionados.
+Utilizando las herramientas de creación de rutas, se eligieron los puntos (*robtarget*) de la trayectoria respecto al *workobject* creado:
+
+![image](https://github.com/user-attachments/assets/9878254d-2dce-4c6e-89b4-b302611d895d)
+
+Luego se procedió a trazar la ruta con los puntos seleccionados:
+
+![image](https://github.com/user-attachments/assets/6341238c-257b-44ed-a8b8-6d0756cf17e4)
 
 ### **Parámetros de Movimiento:**
 - **Velocidad:** Entre 100 y 1000.
