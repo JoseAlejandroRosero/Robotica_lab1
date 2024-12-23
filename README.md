@@ -492,11 +492,11 @@ Se presenta un plano que muestra la ubicación de los elementos clave: herramien
 ---
 
 ## **10. Resultados Obtenidos**
-- **Simulación en RobotStudio:** *(Describe la simulación)*
-- **Implementación en Robot Real:** *(Describe los resultados físicos)*
 
-**Enlace al video de la simulación:**
-[Enlace al video](#)
+En esta sección se presentan los logros alcanzados durante el desarrollo del proyecto. Se logró con éxito la escritura de las primeras cinco letras de cada nombre, demostrando la precisión y funcionalidad del sistema implementado. Sin embargo, debido a la disponibilidad limitada del laboratorio, no fue posible llevar a cabo la calibración final de las entradas y salidas digitales. A pesar de esta limitación, la trayectoria programada fue probada tanto en un plano horizontal como en un plano inclinado a 30 grados, para lo cual se creó un nuevo workobject. Estos resultados reflejan el correcto desempeño del sistema en diferentes condiciones de operación, validando así su robustez y adaptabilidad.
+
+https://github.com/user-attachments/assets/7687df32-6a72-4f66-b5e6-19027e26dfc2
+
 
 ---
 
