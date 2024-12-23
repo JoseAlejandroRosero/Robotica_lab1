@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/afbffb6b-02c6-4d95-a072-a3922f04cfd2
 
 ## **4. Programación en RAPID**
 ### **Código RAPID Utilizado:**
-El siguiente ejemplo muestra una estructura básica para las trayectorias:
+El siguiente ejemplo muestra la estructura básica para la trayectoria:
 
 ```RAPID
 MODULE Module1
