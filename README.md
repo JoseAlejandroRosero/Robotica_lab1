@@ -1,9 +1,9 @@
 # **Laboratorio No. 01 - Robótica Industrial**
 ## **Trayectorias, Entradas y Salidas Digitales**
 
-### ***Alejandro Bernal Rubiano**
-### ***Jose Alejandro Rosero Rodriguez**
-### ***Alejandro Bernal Rubiano**
+### **Alejandro Bernal Rubiano**
+### **Jose Alejandro Rosero Rodriguez**
+### **Guillermo Alejandro Cano Rodriguez**
 ---
 
 ## **1. Objetivos**
