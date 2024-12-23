@@ -2,7 +2,7 @@
 ## **Trayectorias, Entradas y Salidas Digitales**
 
 ### ***Alejandro Bernal Rubiano**
-### ***Alejandro Bernal Rubiano**
+### ***Jose Alejandro Rosero Rodriguez**
 ### ***Alejandro Bernal Rubiano**
 ---
 
