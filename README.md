@@ -46,6 +46,9 @@ El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el 
 ## **3. Desarrollo de las Trayectorias**
 ### **Descripción de las Trayectorias Diseñadas:**
 Se diseñaron trayectorias para escribir las cinco primeras letras de los nombres de los integrantes del grupo y realizar una decoración adicional.
+Mediante Autocad se diseñaron las geometrias de cada una de las letras y la torta a decorar, luego se exportó en formato .SAT y se importó como una geometria en robot studio:
+
+![image](https://github.com/user-attachments/assets/b11e2636-41ca-49a9-b437-922122466578)
 
 Utilizando las herramientas de creación de rutas, se eligieron los puntos (*robtarget*) de la trayectoria respecto al *workobject* creado y luego se procedió a trazar la ruta con los puntos seleccionados.
 
