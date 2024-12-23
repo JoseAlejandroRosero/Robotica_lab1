@@ -21,22 +21,23 @@ Para la realización de la práctica se creó una herramienta para sostener el m
 
 ## **2. Diseño de la Herramienta**
 ### **Descripción de la Herramienta Diseñada:**
-Se diseñó una herramienta que permite fijar un marcador o plumón al flanche del robot ABB IRB 140. Esta herramienta asegura una sujeción estable y permite realizar trayectorias precisas sobre una superficie.
+Se diseñó una herramienta que permite fijar un marcador a la brida del robot ABB IRB 140. Esta herramienta asegura una sujeción estable y permite realizar trayectorias precisas sobre una superficie.
 
-Luego de diseñar la herramienta e imprimirla en 3D, se procedió a crear la trayectoria en forma de líneas y curvas en un software CAD.
+![image](https://github.com/user-attachments/assets/b201da77-73fb-48eb-9e48-b03e7168cb93)
 
 ### **Modelo CAD de la Herramienta:**
-El diseño se modeló en un software CAD y se exportó en formato `.STL` o `.SAT` para su importación en RobotStudio.
+El diseño se modeló en un software CAD y se exportó en formato `.STL` para su importación en RobotStudio.
 
 ### **Parámetros de Diseño:**
-- Material: *(Especificar material utilizado)*
-- Tipo de sujeción: *(Especificar tipo de fijación)*
-- Adaptación al flanche: *(Describir mecanismo de montaje)*
+- Material: PLC
+- Tipo de sujeción: Por friccion al marcador
+- Adaptación al flanche: 4 tornillos
+
+![image](https://github.com/user-attachments/assets/7739ee76-a5b7-42cf-ac46-aae5367c6d8d)
+
 
 ### **Calibración de la Herramienta:**
-El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el robot físico, asegurando que las coordenadas del TCP (Tool Center Point) estuvieran correctamente definidas.
-
-Se especificaron los datos necesarios para la creación del TCP de la herramienta y se creó un *workobject* para definir la trayectoria.
+El proceso de calibración se llevó a cabo tanto en **RobotStudio** como en el robot físico, asegurando que las coordenadas del TCP (Tool Center Point) estuvieran correctamente definidas llevando el TCP al mismo punto desde 3 orientaciones distintas y definiendo una direccion de avance.
 
 ---
 
